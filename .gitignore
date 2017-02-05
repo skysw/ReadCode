@@ -29,7 +29,7 @@
 *.app
 
 
-/ReadCode/Classes
+# /ReadCode/Classes
 /ReadCode/cocos2d
 /ReadCode/proj.android
 /ReadCode/proj.android-studio
