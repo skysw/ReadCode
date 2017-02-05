@@ -78,7 +78,7 @@
 # /ReadCode/cocos2d/external/zlib
 # /ReadCode/cocos2d/licenses
 /ReadCode/cocos2d/plugin
-/ReadCode/cocos2d/tools
+# /ReadCode/cocos2d/tools
 /ReadCode/proj.android
 /ReadCode/proj.android-studio
 /ReadCode/proj.ios_mac
