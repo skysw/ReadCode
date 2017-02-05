@@ -76,8 +76,7 @@
 # /ReadCode/cocos2d/external/xxhash
 # /ReadCode/cocos2d/external/xxtea
 # /ReadCode/cocos2d/external/zlib
-
-/ReadCode/cocos2d/licenses
+# /ReadCode/cocos2d/licenses
 /ReadCode/cocos2d/plugin
 /ReadCode/cocos2d/tools
 /ReadCode/proj.android
