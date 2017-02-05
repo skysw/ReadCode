@@ -51,13 +51,13 @@
 # /ReadCode/cocos2d/external/bullet
 # /ReadCode/cocos2d/external/chipmunk
 # /ReadCode/cocos2d/external/clipper
-/ReadCode/cocos2d/external/ConvertUTF
-/ReadCode/cocos2d/external/curl
-/ReadCode/cocos2d/external/edtaa3func
-/ReadCode/cocos2d/external/flatbuffers
-/ReadCode/cocos2d/external/freetype2
-/ReadCode/cocos2d/external/glfw3
-/ReadCode/cocos2d/external/jpeg
+# /ReadCode/cocos2d/external/ConvertUTF
+# /ReadCode/cocos2d/external/curl
+# /ReadCode/cocos2d/external/edtaa3func
+# /ReadCode/cocos2d/external/flatbuffers
+# /ReadCode/cocos2d/external/freetype2
+# /ReadCode/cocos2d/external/glfw3
+# /ReadCode/cocos2d/external/jpeg
 /ReadCode/cocos2d/external/json
 /ReadCode/cocos2d/external/linux-specific
 /ReadCode/cocos2d/external/png
