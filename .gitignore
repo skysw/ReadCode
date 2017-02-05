@@ -84,10 +84,10 @@
 # /ReadCode/proj.ios_mac
 # /ReadCode/proj.linux
 # /ReadCode/proj.tizen
-/ReadCode/proj.win8.1-universal
-/ReadCode/proj.win10
+# /ReadCode/proj.win8.1-universal
+# /ReadCode/proj.win10
 /ReadCode/proj.win32
-/ReadCode/Resources
+# /ReadCode/Resources
 
 
 
