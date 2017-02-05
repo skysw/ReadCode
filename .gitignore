@@ -86,7 +86,9 @@
 # /ReadCode/proj.tizen
 # /ReadCode/proj.win8.1-universal
 # /ReadCode/proj.win10
-/ReadCode/proj.win32
+# /ReadCode/proj.win32
+/ReadCode/proj.win32/Debug.win32
+/ReadCode/proj.win32/res
 # /ReadCode/Resources
 
 
@@ -94,3 +96,11 @@
 
 
 
+*.filters
+ReadCode/proj.win32/ReadCode.vcxproj
+*.user
+ReadCode/proj.win32/ReadCode.VC.VC.opendb
+ReadCode/proj.win32/.vs/ReadCode/v14/.suo
+ReadCode/proj.win32/.vs/ReadCode/v14/.suo
+ReadCode/proj.win32/ReadCode.VC.db
+ReadCode/proj.win32/ReadCode.sln
