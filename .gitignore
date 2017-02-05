@@ -82,7 +82,7 @@
 # /ReadCode/proj.android
 # /ReadCode/proj.android-studio
 # /ReadCode/proj.ios_mac
-/ReadCode/proj.linux
+# /ReadCode/proj.linux
 /ReadCode/proj.tizen
 /ReadCode/proj.win8.1-universal
 /ReadCode/proj.win10
