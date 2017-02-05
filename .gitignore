@@ -37,7 +37,7 @@
 # /ReadCode/Classes
 # /ReadCode/cocos2d
 # /ReadCode/cocos2d/build
-/ReadCode/cocos2d/cmake
+# /ReadCode/cocos2d/cmake
 /ReadCode/cocos2d/cocos
 /ReadCode/cocos2d/docs
 /ReadCode/cocos2d/extensions
