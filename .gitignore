@@ -48,7 +48,7 @@
 # /ReadCode/cocos2d/docs
 # /ReadCode/cocos2d/extensions
 # /ReadCode/cocos2d/external/Box2D
-/ReadCode/cocos2d/external/bullet
+# /ReadCode/cocos2d/external/bullet
 /ReadCode/cocos2d/external/chipmunk
 /ReadCode/cocos2d/external/clipper
 /ReadCode/cocos2d/external/ConvertUTF
