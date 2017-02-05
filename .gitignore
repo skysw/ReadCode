@@ -47,7 +47,36 @@
 /ReadCode/cocos2d/cocos/wp_8.1_props
 # /ReadCode/cocos2d/docs
 # /ReadCode/cocos2d/extensions
-/ReadCode/cocos2d/external
+# /ReadCode/cocos2d/external/Box2D
+/ReadCode/cocos2d/external/bullet
+/ReadCode/cocos2d/external/chipmunk
+/ReadCode/cocos2d/external/clipper
+/ReadCode/cocos2d/external/ConvertUTF
+/ReadCode/cocos2d/external/curl
+/ReadCode/cocos2d/external/edtaa3func
+/ReadCode/cocos2d/external/flatbuffers
+/ReadCode/cocos2d/external/freetype2
+/ReadCode/cocos2d/external/glfw3
+/ReadCode/cocos2d/external/jpeg
+/ReadCode/cocos2d/external/json
+/ReadCode/cocos2d/external/linux-specific
+/ReadCode/cocos2d/external/png
+/ReadCode/cocos2d/external/poly2tri
+/ReadCode/cocos2d/external/rapidxml
+/ReadCode/cocos2d/external/recast
+/ReadCode/cocos2d/external/sqlite3
+/ReadCode/cocos2d/external/tiff
+/ReadCode/cocos2d/external/tinyxml2
+/ReadCode/cocos2d/external/webp
+/ReadCode/cocos2d/external/websockets
+/ReadCode/cocos2d/external/win10-specific
+/ReadCode/cocos2d/external/win32-specific
+/ReadCode/cocos2d/external/winrt_8.1-specific
+/ReadCode/cocos2d/external/wp_8.1-specific
+/ReadCode/cocos2d/external/xxhash
+/ReadCode/cocos2d/external/xxtea
+/ReadCode/cocos2d/external/zlib
+
 /ReadCode/cocos2d/licenses
 /ReadCode/cocos2d/plugin
 /ReadCode/cocos2d/tools
