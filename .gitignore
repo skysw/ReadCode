@@ -50,7 +50,7 @@
 # /ReadCode/cocos2d/external/Box2D
 # /ReadCode/cocos2d/external/bullet
 # /ReadCode/cocos2d/external/chipmunk
-/ReadCode/cocos2d/external/clipper
+# /ReadCode/cocos2d/external/clipper
 /ReadCode/cocos2d/external/ConvertUTF
 /ReadCode/cocos2d/external/curl
 /ReadCode/cocos2d/external/edtaa3func
