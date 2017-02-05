@@ -36,7 +36,7 @@
 
 # /ReadCode/Classes
 # /ReadCode/cocos2d
-/ReadCode/cocos2d/build
+# /ReadCode/cocos2d/build
 /ReadCode/cocos2d/cmake
 /ReadCode/cocos2d/cocos
 /ReadCode/cocos2d/docs
@@ -45,10 +45,6 @@
 /ReadCode/cocos2d/licenses
 /ReadCode/cocos2d/plugin
 /ReadCode/cocos2d/tools
-
-
-
-
 /ReadCode/proj.android
 /ReadCode/proj.android-studio
 /ReadCode/proj.ios_mac
