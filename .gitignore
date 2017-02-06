@@ -79,7 +79,7 @@
 # /ReadCode/cocos2d/licenses
 # /ReadCode/cocos2d/plugin
 # /ReadCode/cocos2d/plugin/jsbindings
-/ReadCode/cocos2d/plugin/luabindings
+# /ReadCode/cocos2d/plugin/luabindings
 /ReadCode/cocos2d/plugin/plugins
 /ReadCode/cocos2d/plugin/protocols
 /ReadCode/cocos2d/plugin/tools
