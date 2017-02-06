@@ -77,7 +77,13 @@
 # /ReadCode/cocos2d/external/xxtea
 # /ReadCode/cocos2d/external/zlib
 # /ReadCode/cocos2d/licenses
-/ReadCode/cocos2d/plugin
+# /ReadCode/cocos2d/plugin
+/ReadCode/cocos2d/plugin/jsbindings
+/ReadCode/cocos2d/plugin/luabindings
+/ReadCode/cocos2d/plugin/plugins
+/ReadCode/cocos2d/plugin/protocols
+/ReadCode/cocos2d/plugin/tools
+
 # /ReadCode/cocos2d/tools
 # /ReadCode/proj.android
 # /ReadCode/proj.android-studio
