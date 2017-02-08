@@ -148,6 +148,8 @@ public: virtual const varType& get##funName(void) const;
  *            The variables and methods declared after CC_PROPERTY are all public.
  *            If you need protected or private, please declare.
  */
+// 属性选择器
+// 定义一个属性及其访问器，没有实现，通常用于简单的值实现。
 #define CC_PROPERTY(varType, varName, funName)\
 protected: varType varName;\
 public: virtual varType get##funName(void) const;\

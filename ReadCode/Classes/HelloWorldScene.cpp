@@ -50,6 +50,7 @@ bool HelloWorld::init()
     menu->setPosition(Vec2::ZERO);
     this->addChild(menu, 1);
 
+
     /////////////////////////////
     // 3. add your codes below...
 

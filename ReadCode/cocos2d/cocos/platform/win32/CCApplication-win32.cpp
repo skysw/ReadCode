@@ -69,6 +69,7 @@ int Application::run()
 
     QueryPerformanceCounter(&nLast);
 
+	// 初始化OpenGL的配置信息
     initGLContextAttrs();
 
     // Initialize instance and cocos2d.
@@ -89,8 +90,9 @@ int Application::run()
         if (nNow.QuadPart - nLast.QuadPart > _animationInterval.QuadPart)
         {
             nLast.QuadPart = nNow.QuadPart - (nNow.QuadPart % _animationInterval.QuadPart);
-            
+            // 进入主循环
             director->mainLoop();
+			// 事件
             glview->pollEvents();
         }
         else

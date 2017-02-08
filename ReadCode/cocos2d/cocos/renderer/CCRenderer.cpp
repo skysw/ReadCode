@@ -633,6 +633,7 @@ void Renderer::render()
     {
         //Process render commands
         //1. Sort render commands based on ID
+		// 对当前的渲染队列进行排序
         for (auto &renderqueue : _renderGroups)
         {
             renderqueue.sort();

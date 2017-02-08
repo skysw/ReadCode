@@ -287,7 +287,7 @@ void Director::drawScene()
     {
         setNextScene();
     }
-
+	// 模型视图矩阵压栈
     pushMatrix(MATRIX_STACK_TYPE::MATRIX_STACK_MODELVIEW);
     
     if (_runningScene)
@@ -299,6 +299,7 @@ void Director::drawScene()
         _renderer->clearDrawStats();
         
         //render the scene
+		// 渲染场景
         _openGLView->renderScene(_runningScene, _renderer);
         
         _eventDispatcher->dispatchEvent(_eventAfterVisit);
@@ -314,10 +315,12 @@ void Director::drawScene()
     {
         showStats();
     }
+	// 渲染器开始渲染
     _renderer->render();
 
     _eventDispatcher->dispatchEvent(_eventAfterDraw);
 
+	// 模型视图矩阵出栈
     popMatrix(MATRIX_STACK_TYPE::MATRIX_STACK_MODELVIEW);
 
     _totalFrames++;
@@ -1443,6 +1446,7 @@ void Director::mainLoop()
         drawScene();
      
         // release the objects
+		// 释放cocos2d的对象池
         PoolManager::getInstance()->getCurrentPool()->clear();
     }
 }

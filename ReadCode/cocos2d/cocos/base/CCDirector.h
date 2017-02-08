@@ -699,6 +699,7 @@ protected:
 // FIXME: Added for backward compatibility in case
 // someone is subclassing it.
 // Should be removed in v4.0
+// DisplayLinkDirector 在 4.0版本中将被移除
 class DisplayLinkDirector : public Director
 {};
 
