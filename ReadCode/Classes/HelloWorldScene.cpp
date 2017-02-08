@@ -23,11 +23,12 @@ bool HelloWorld::init()
 {
     //////////////////////////////
     // 1. super init first
+	// 先初始化父类
     if ( !Layer::init() )
     {
         return false;
     }
-    
+    // 做这个类里所需要的操作
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 

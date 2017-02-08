@@ -35,6 +35,7 @@ static int register_all_packages()
 
 bool AppDelegate::applicationDidFinishLaunching() {
     // initialize director
+	// 初始化导演，以便启动游戏引擎
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
@@ -47,9 +48,11 @@ bool AppDelegate::applicationDidFinishLaunching() {
     }
 
     // turn on display FPS
+	// 启用FPS
     director->setDisplayStats(true);
 
     // set FPS. the default value is 1.0/60 if you don't call this
+	// 设置帧率 默认值为 60 fps 0.0016s
     director->setAnimationInterval(1.0f / 60);
 
     // Set the design resolution
@@ -83,6 +86,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 }
 
 // This function will be called when the app is inactive. Note, when receiving a phone call it is invoked.
+// 游戏进入后台的时候调用这个方法，在这里暂停音乐音效的播放
 void AppDelegate::applicationDidEnterBackground() {
     Director::getInstance()->stopAnimation();
 
@@ -91,6 +95,7 @@ void AppDelegate::applicationDidEnterBackground() {
 }
 
 // this function will be called when the app is active again
+// 游戏进入前台的时候调用这个方法，在这里恢复音乐音效的播放
 void AppDelegate::applicationWillEnterForeground() {
     Director::getInstance()->startAnimation();
 

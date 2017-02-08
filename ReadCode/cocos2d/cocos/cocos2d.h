@@ -30,11 +30,13 @@ THE SOFTWARE.
 
 // 0x00 HI ME LO
 // 00   03 08 00
+// cocos2d 当前的引擎版本
 #define COCOS2D_VERSION 0x00031401
 
 //
 // all cocos2d include files
 //
+// cocos2d 引擎的配置信息，可以剔除用不到的模块，减小apk的包体
 #include "base/ccConfig.h"
 
 // base
