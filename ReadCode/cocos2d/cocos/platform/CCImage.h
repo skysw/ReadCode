@@ -62,6 +62,7 @@ typedef struct _MipmapInfo
 class CC_DLL Image : public Ref
 {
 public:
+	// ÓÑÔª ÎÆÀí»º´æ
     friend class TextureCache;
     /**
      * @js ctor

@@ -111,6 +111,7 @@ Director::Director()
 {
 }
 
+// director 的初始化
 bool Director::init(void)
 {
     setDefaultValues();

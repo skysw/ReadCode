@@ -489,6 +489,7 @@ bool Image::initWithImageFile(const std::string& path)
 
     Data data = FileUtils::getInstance()->getDataFromFile(_filePath);
 
+	// ÅÐ¶ÏÊý¾Ý·Ç¿Õ
     if (!data.isNull())
     {
         ret = initWithImageData(data.getBytes(), data.getSize());
