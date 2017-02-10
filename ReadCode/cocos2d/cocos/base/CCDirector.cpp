@@ -114,17 +114,21 @@ Director::Director()
 // director 的初始化
 bool Director::init(void)
 {
+	// 设置默认值
     setDefaultValues();
 
     // scenes
+	// 初始化场景， 下个场景
     _runningScene = nullptr;
     _nextScene = nullptr;
 
     _notificationNode = nullptr;
 
+	// 预留了15个场景的空间
     _scenesStack.reserve(15);
 
     // FPS
+	// 设置 fps
     _accumDt = 0.0f;
     _frameRate = 0.0f;
     _FPSLabel = _drawnBatchesLabel = _drawnVerticesLabel = nullptr;
@@ -133,24 +137,32 @@ bool Director::init(void)
     _secondsPerFrame = 1.0f;
 
     // paused ?
+	// 是否暂停
     _paused = false;
 
     // purge ?
+	// 是否清除
     _purgeDirectorInNextLoop = false;
     
     // restart ?
+	// 是否重启
     _restartDirectorInNextLoop = false;
     
     // invalid ?
+	// 是否是默认值
     _invalid = false;
 
     _winSizeInPoints = Size::ZERO;
 
+	// 初始化 OpenGL View
     _openGLView = nullptr;
+	// 初始化 FrameBuffer
     _defaultFBO = nullptr;
     
+	// 初始化上下问的缩放比例
     _contentScaleFactor = 1.0f;
 
+	// 
     _console = new (std::nothrow) Console;
 
     // scheduler

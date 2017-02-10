@@ -226,6 +226,7 @@ void Scene::render(Renderer* renderer, const Mat4* eyeTransforms, const Mat4* ey
         //clear background with max depth
         camera->clearBackground();
         //visit the scene
+		// µÝ¹éµ÷ÓÃ
         visit(renderer, transform, 0);
 #if CC_USE_NAVMESH
         if (_navMesh && _navMeshDebugCamera == camera)

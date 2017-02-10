@@ -70,6 +70,7 @@ int Application::run()
     QueryPerformanceCounter(&nLast);
 
 	// 初始化OpenGL的配置信息
+	// 初始化 位掩码 r g b a death  stecil
     initGLContextAttrs();
 
     // Initialize instance and cocos2d.
@@ -78,7 +79,7 @@ int Application::run()
         return 1;
     }
 
-    auto director = Director::getInstance();
+	auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
 
     // Retain glview to avoid glview being released in the while loop
