@@ -162,15 +162,18 @@ bool Director::init(void)
 	// 初始化上下问的缩放比例
     _contentScaleFactor = 1.0f;
 
-	// 
+	// 初始化控制台
     _console = new (std::nothrow) Console;
 
     // scheduler
+	// 初始化计时器
     _scheduler = new (std::nothrow) Scheduler();
     // action manager
+	// 初始化动作管理器
     _actionManager = new (std::nothrow) ActionManager();
     _scheduler->scheduleUpdate(_actionManager, Scheduler::PRIORITY_SYSTEM, false);
 
+	// 初始化 事件分发器
     _eventDispatcher = new (std::nothrow) EventDispatcher();
     _eventAfterDraw = new (std::nothrow) EventCustom(EVENT_AFTER_DRAW);
     _eventAfterDraw->setUserData(this);
@@ -184,9 +187,11 @@ bool Director::init(void)
     _eventProjectionChanged->setUserData(this);
     _eventResetDirector = new (std::nothrow) EventCustom(EVENT_RESET);
     //init TextureCache
+	// 初始化纹理缓存
     initTextureCache();
+	// 初始化矩阵栈
     initMatrixStack();
-
+	// 初始化 渲染器
     _renderer = new (std::nothrow) Renderer;
     RenderState::initialize();
 

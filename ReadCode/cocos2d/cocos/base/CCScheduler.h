@@ -40,6 +40,7 @@ NS_CC_BEGIN
 
 class Scheduler;
 
+// ·Âº¯Êý
 typedef std::function<void(float)> ccSchedulerFunc;
 
 /**

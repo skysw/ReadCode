@@ -97,6 +97,7 @@ enum class MATRIX_STACK_TYPE
 class CC_DLL Director : public Ref
 {
 public:
+	// 事件名
     /** Director will trigger an event when projection type is changed. */
     static const char* EVENT_PROJECTION_CHANGED;
     /** Director will trigger an event before Schedule::update() is invoked. */
@@ -113,6 +114,7 @@ public:
     /**
      * @brief Possible OpenGL projections used by director
      */
+	// 矩阵投影
     enum class Projection
     {
         /// Sets a 2D projection (orthogonal projection).

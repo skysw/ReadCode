@@ -209,8 +209,9 @@ Renderer::Renderer()
 ,_cacheTextureListener(nullptr)
 #endif
 {
+	// 群组管理器
     _groupCommandManager = new (std::nothrow) GroupCommandManager();
-    
+    // 队列入栈
     _commandGroupStack.push(DEFAULT_RENDER_QUEUE);
     
     RenderQueue defaultRenderQueue;
@@ -374,6 +375,7 @@ int Renderer::createRenderQueue()
 
 void Renderer::processRenderCommand(RenderCommand* command)
 {
+	// 获取到命令的类型
     auto commandType = command->getType();
     if( RenderCommand::Type::TRIANGLES_COMMAND == commandType)
     {
