@@ -263,6 +263,7 @@ void Renderer::initGLView()
 
 void Renderer::setupBuffer()
 {
+	// 设置 buffer
     if(Configuration::getInstance()->supportsShareableVAO())
     {
         setupVBOAndVAO();
@@ -285,14 +286,17 @@ void Renderer::setupVBOAndVAO()
     glBufferData(GL_ARRAY_BUFFER, sizeof(_verts[0]) * VBO_SIZE, _verts, GL_DYNAMIC_DRAW);
 
     // vertices
+	// 顶点信息
     glEnableVertexAttribArray(GLProgram::VERTEX_ATTRIB_POSITION);
     glVertexAttribPointer(GLProgram::VERTEX_ATTRIB_POSITION, 3, GL_FLOAT, GL_FALSE, sizeof(V3F_C4B_T2F), (GLvoid*) offsetof( V3F_C4B_T2F, vertices));
 
     // colors
+	// 颜色信息
     glEnableVertexAttribArray(GLProgram::VERTEX_ATTRIB_COLOR);
     glVertexAttribPointer(GLProgram::VERTEX_ATTRIB_COLOR, 4, GL_UNSIGNED_BYTE, GL_TRUE, sizeof(V3F_C4B_T2F), (GLvoid*) offsetof( V3F_C4B_T2F, colors));
 
     // tex coords
+	// 纹理信息
     glEnableVertexAttribArray(GLProgram::VERTEX_ATTRIB_TEX_COORD);
     glVertexAttribPointer(GLProgram::VERTEX_ATTRIB_TEX_COORD, 2, GL_FLOAT, GL_FALSE, sizeof(V3F_C4B_T2F), (GLvoid*) offsetof( V3F_C4B_T2F, texCoords));
 
@@ -496,6 +500,7 @@ void Renderer::visitRenderQueue(RenderQueue& queue)
         
         for (const auto& zNegNext : zNegQueue)
         {
+			// 执行渲染命令
             processRenderCommand(zNegNext);
         }
         flush();
